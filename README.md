@@ -16,3 +16,5 @@ git clone か zip ファイルをダウンロードし展開します。
 cd prototype
 ruby nenene.rb
 ```
+
+[![ねねね](https://img.youtube.com/vi/ZqR_Neb3ytA/0.jpg)](https://www.youtube.com/watch?v=ZqR_Neb3ytA)
