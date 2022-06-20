@@ -88,7 +88,7 @@ class Machine
   def initialize
     patterns = [
       ["ね"] * 6, #["ね", "　"] * 3,
-      ["ね"] * 6, #["ね", "　"] * 3,
+      ["ね", "る", "れ"] * 2, #["ね"] * 6, #["ね", "　"] * 3,
       ["ね", "が", "ど", "ば", "よ", "　"],
     ]
     prev = nil
@@ -146,6 +146,8 @@ class Machine
       case @drums[1].state
       when Drum::STATE_STOPPED
         @drums[2].state
+      when Drum::STATE_ABOUT_TO_STOP
+        Drum::STATE_ABOUT_TO_STOP
       else
         Drum::STATE_STOPPING
       end
